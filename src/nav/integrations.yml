@@ -39,8 +39,6 @@ pages:
             path: /docs/integrations/open-source-telemetry-integrations/opentelemetry/view-your-opentelemetry-data-new-relic
           - title: Advanced configuration
             path: /docs/integrations/open-source-telemetry-integrations/opentelemetry/opentelemetry-advanced-configuration
-          - title: Troubleshooting
-            path: /docs/integrations/open-source-telemetry-integrations/troubleshooting/troubleshoot-opentelemetry-exporter
       - title: Dropwizard
         pages:
           - title: Dropwizard reporter
