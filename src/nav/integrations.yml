@@ -33,8 +33,6 @@ pages:
             path: /docs/integrations/open-source-telemetry-integrations/opentelemetry/introduction-opentelemetry-new-relic
           - title: Quick start
             path: /docs/integrations/open-source-telemetry-integrations/opentelemetry/opentelemetry-quick-start
-          - title: Architecture recipes
-            path: /docs/integrations/open-source-telemetry-integrations/opentelemetry/opentelemetry-architecture-recipes
           - title: Logging
             path: /docs/integrations/open-source-telemetry-integrations/opentelemetry/opentelemetry-and-logging
           - title: View your OpenTelemetry data
