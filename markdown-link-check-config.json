@@ -1,5 +1,5 @@
 {
-  "projectBaseUrl":"${workspaceFolder}",
+  "projectBaseUrl":"https://docs.newrelic.com/docs",
   "retryOn429": true,
   "aliveStatusCodes": [
     200,
@@ -13,12 +13,12 @@
     },
     {
       "pattern": "^/(?<path>.*)\/$",
-      "replacement": "{{BASEURL}}/src/content/$<path>.mdx",
+      "replacement": "https://docs.newrelic.com/$<path>",
       "reason": "Replace internal links to directories (i.e. trailing /) to link to appropriate .mdx file"
     },
     {
       "pattern": "^/(?<path>.*)$",
-      "replacement": "{{BASEURL}}/src/content/$<path>.mdx",
+      "replacement": "https://docs.newrelic.com/$<path>",
       "reason": "Replace internal links to documents to link to appropriate .mdx file"
     }
   ],
@@ -26,6 +26,7 @@
     { "pattern": "^#.*$", "reasons": "Ignore in page anchors because we can't currently validate them." },
     { "pattern": "^{.*}$", "reason": "Ignore image links." },
     { "pattern": "^https://otlp.nr-data.net$", "reason": "Ignore link to endpoint." },
-    { "pattern": "^https://insights.newrelic.com$", "reason": "Ignore link to endpoint." }
+    { "pattern": "^https://insights.newrelic.com$", "reason": "Ignore link to endpoint." },
+    { "pattern":  "^http.*$", "reason": "Focussing on internal links for a second" }
   ]
 }
